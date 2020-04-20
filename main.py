@@ -24,6 +24,7 @@ if __name__=="__main__":
             myData+=tr.get_text()
         myData=myData[1:]
         itemList=  myData.split("\n\n")
+        #Notify about the total number of cases of COVID-19
         s=itemList[33].split("\n")
         notifyMe(s[0],s[1])
 
@@ -38,4 +39,4 @@ if __name__=="__main__":
                 notifyMe(nTitle,nText)
                 time.sleep(2)
 
-        time.sleep(10)
+        
